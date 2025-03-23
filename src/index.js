@@ -20,5 +20,7 @@ app.use(
 ///Routes
 
 const product = require("./routes/productRoute");
-app.use("/api/v1", product);
+const user =require("./routes/userRoute")
+app.use("/api", product);
+app.use('/api',user)
 module.exports = app;
